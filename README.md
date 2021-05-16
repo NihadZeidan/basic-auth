@@ -5,13 +5,13 @@
 
 ### tests report:
 
-[Heroku]()
+[Heroku](https://nihad-auth.herokuapp.com)
 
 
-[GitHub PR]()
+[GitHub PR](https://github.com/NihadZeidan/basic-auth/pull/1)
 
 
-[GitHub Actions]()
+[GitHub Actions](https://github.com/NihadZeidan/basic-auth/actions)
 
 ### .env requirements
 
