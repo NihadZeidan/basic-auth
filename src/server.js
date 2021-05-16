@@ -2,7 +2,7 @@
 
   // 3rd Party Resources
   const express = require('express');
-
+  const cors = require('cors')
   const notFoundHandler = require('./errorHandlers/404.js');
   const errorHandler = require('./errorHandlers/500.js');
 
@@ -14,6 +14,7 @@
   // Process JSON input and put the data on req.body
   app.use(express.json());
 
+  app.use(cors());
   // Process FORM intput and put the data on req.body
   app.use(express.urlencoded({ extended: true }));
 
