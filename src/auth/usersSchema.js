@@ -14,11 +14,11 @@ const usersSchema = mongoose.Schema({
 });
 
 
-// usersSchema.pre('hashing', async(next) => {
+usersSchema.pre('save', async function(next) {
 
-//     this.password = await bcrypt.hash(req.body.password, 10);
-//     next();
-// });
+    this.password = await bcrypt.hash(this.password, 10);
+    next();
+});
 
 
 const Users = mongoose.model('user', usersSchema);

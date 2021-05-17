@@ -13,8 +13,6 @@ router.post('/signup', async(req, res) => {
 
     try {
 
-        req.body.password = await bcrypt.hash(req.body.password, 10);
-
         const user = new Users(req.body);
         const record = await user.save();
         res.status(201).json(record);
